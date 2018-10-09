@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: CATER.RESTAURANT
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_cloud_waimai?characterEncoding=utf8mb4
+    username: root
+    password: root
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+  type-aliases-package: muyi.cater.restaurant.domain.model
+
+
