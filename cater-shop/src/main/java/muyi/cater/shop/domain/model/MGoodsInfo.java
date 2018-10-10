@@ -1,4 +1,4 @@
-package muyi.cater.restaurant.domain.model;
+package muyi.cater.shop.domain.model;
 
 import lombok.Data;
 

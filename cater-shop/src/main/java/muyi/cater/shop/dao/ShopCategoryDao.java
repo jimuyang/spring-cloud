@@ -1,6 +1,6 @@
-package muyi.cater.restaurant.dao;
+package muyi.cater.shop.dao;
 
-import muyi.cater.restaurant.domain.model.MGoodsInfo;
+import muyi.cater.shop.domain.model.MGoodsInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Select;
  * @author: Jimu Yang.
  */
 @Mapper
-public interface ProductCategoryDao {
+public interface ShopCategoryDao {
 
     @Select("")
     MGoodsInfo selectById(Long goodsId);

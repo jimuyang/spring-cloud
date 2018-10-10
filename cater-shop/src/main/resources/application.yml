@@ -13,6 +13,6 @@ mybatis:
     map-underscore-to-camel-case: true
     default-fetch-size: 100
     default-statement-timeout: 30
-  type-aliases-package: muyi.cater.restaurant.domain.model
+  type-aliases-package: muyi.cater.shop.domain.model
 
 

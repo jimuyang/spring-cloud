@@ -10,7 +10,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client-demo</module>
-        <module>cater-restaurant</module>
+        <module>cater-shop</module>
     </modules>
     <packaging>pom</packaging>
 
