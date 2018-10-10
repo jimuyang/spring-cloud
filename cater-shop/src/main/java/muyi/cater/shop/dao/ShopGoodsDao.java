@@ -10,11 +10,9 @@ import org.apache.ibatis.annotations.Select;
  * @author: Jimu Yang.
  */
 @Mapper
-public interface ShopCategoryDao {
+public interface ShopGoodsDao {
 
-    @Select("")
+    @Select("select * from `tb_shop_goods_info` where id = #{goodsId}")
     MGoodsInfo selectById(Long goodsId);
-
-
 
 }
