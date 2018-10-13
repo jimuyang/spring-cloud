@@ -22,7 +22,7 @@ public class ShopGoodsController {
     public TGoodsInfo getGoodsInfo(@PathVariable("id") Long goodsId) {
         try {
             return this.goodsService.getGoodsInfo(goodsId);
-        }catch (BusinessException be) {
+        } catch (BusinessException be) {
             return null;
         }
     }

@@ -1,10 +1,9 @@
 server:
-  port: 8082
+  port: 8081
 
 spring:
   application:
-    name: CATER.RESTAURANT
-
+    name: CATER.ORDER
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/spring_cloud_waimai?characterEncoding=utf8&useSSL=false
