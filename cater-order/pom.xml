@@ -11,6 +11,10 @@
 
     <artifactId>cater-order</artifactId>
 
+    <properties>
+        <muyi.common.version>1.0-SNAPSHOT</muyi.common.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -41,6 +45,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.muyi.spring</groupId>
+            <artifactId>common</artifactId>
+            <version>${muyi.common.version}</version>
         </dependency>
     </dependencies>
 

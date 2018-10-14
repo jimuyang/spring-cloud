@@ -12,6 +12,7 @@
         <module>eureka-client-demo</module>
         <module>cater-shop</module>
         <module>cater-order</module>
+        <module>common</module>
     </modules>
     <packaging>pom</packaging>
 
