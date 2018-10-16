@@ -9,7 +9,7 @@ import lombok.Data;
  * @date: 2018/10/14 下午11:26
  */
 @Data
-public class TOrderForm {
+public class TCreateOrder {
 
     private Long userId;
 

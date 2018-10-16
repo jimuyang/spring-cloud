@@ -1,12 +1,11 @@
 package muyi.cater.order.controller;
 
-import muyi.cater.order.domain.dto.TOrderForm;
+import muyi.cater.order.domain.dto.TCreateOrder;
 import muyi.common.BusinessException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.security.provider.certpath.BuildStep;
 
 /**
  * Created by IntelliJ IDEA.
@@ -20,7 +19,7 @@ public class OrderController {
 
 
     @PostMapping("/create")
-    public void create(@RequestBody TOrderForm tOrderForm) throws BusinessException {
+    public void create(@RequestBody TCreateOrder tCreateOrder) throws BusinessException {
 
 
     }
