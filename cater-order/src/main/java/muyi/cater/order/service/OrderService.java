@@ -1,5 +1,6 @@
 package muyi.cater.order.service;
 
+import muyi.cater.order.domain.dto.TCreateOrder;
 import muyi.common.BusinessException;
 
 /**
@@ -10,5 +11,9 @@ import muyi.common.BusinessException;
  */
 public interface OrderService {
 
-    void testOrder() throws BusinessException;
+    /**
+     * 创建订单
+     * @throws BusinessException
+     */
+    void createOrder(TCreateOrder tCreateOrder) throws BusinessException;
 }

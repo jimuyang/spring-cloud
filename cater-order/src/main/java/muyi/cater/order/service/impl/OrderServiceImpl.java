@@ -1,6 +1,7 @@
 package muyi.cater.order.service.impl;
 
 import muyi.cater.order.dao.OrderDao;
+import muyi.cater.order.domain.dto.TCreateOrder;
 import muyi.cater.order.service.OrderService;
 import muyi.common.BusinessException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +19,12 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderDao orderDao;
 
+    /**
+     * 创建订单
+     */
     @Override
-    public void testOrder() throws BusinessException {
+    public void createOrder(TCreateOrder tCreateOrder) throws BusinessException {
+
 
 
     }

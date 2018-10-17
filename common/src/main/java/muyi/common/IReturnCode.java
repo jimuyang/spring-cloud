@@ -8,7 +8,7 @@ package muyi.common;
  */
 public interface IReturnCode {
 
-    int getCode();
+    String getCode();
 
     String getMessage();
 }
