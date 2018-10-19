@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class RestResponseData {
 
-    private int code;
+    private String code;
 
     private String message;
 

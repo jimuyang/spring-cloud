@@ -4,7 +4,7 @@ import muyi.cater.shop.domain.model.MGoodsInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
+// import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -19,7 +19,6 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class ShopGoodsDaoTest {
 
-    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private ShopGoodsDao shopGoodsDao;
 
