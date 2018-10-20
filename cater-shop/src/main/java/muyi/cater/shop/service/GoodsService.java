@@ -1,7 +1,7 @@
 package muyi.cater.shop.service;
 
-import muyi.cater.shop.BusinessException;
 import muyi.cater.shop.domain.dto.TGoodsInfo;
+import muyi.common.BusinessException;
 
 /**
  * Created with IntelliJ IDEA.

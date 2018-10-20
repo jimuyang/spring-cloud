@@ -1,10 +1,10 @@
 package muyi.cater.shop.service.impl;
 
-import muyi.cater.shop.BusinessException;
 import muyi.cater.shop.dao.ShopGoodsDao;
 import muyi.cater.shop.domain.dto.TGoodsInfo;
 import muyi.cater.shop.domain.model.MGoodsInfo;
 import muyi.cater.shop.service.GoodsService;
+import muyi.common.BusinessException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
