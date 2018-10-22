@@ -26,4 +26,8 @@ public class MGoodsInfo {
     private Date createdAt;
 
     private Date updatedAt;
+
+    private Integer stock;
+
+    private Long shopId;
 }

@@ -15,6 +15,14 @@ import javax.servlet.http.HttpServletRequest;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    /**
+     * 业务异常全局处理
+     *
+     * @param request
+     * @param be
+     * @return
+     * @throws Exception
+     */
     @ExceptionHandler(BusinessException.class)
     public RestResponseData businessExceptionHandler(HttpServletRequest request, BusinessException be) throws Exception {
         log.error("BusinessException occur and caught by global handler: {}, {}", be.getCode(), be.getMessage());
@@ -26,6 +34,14 @@ public class GlobalExceptionHandler {
         return restResponseData;
     }
 
+    /**
+     * 异常全局处理 兜底方案
+     *
+     * @param request
+     * @param e
+     * @return
+     * @throws Exception
+     */
     @ExceptionHandler(Exception.class)
     public RestResponseData allExceptionHandler(HttpServletRequest request, Exception e) throws Exception {
         log.error("Exception occur and caught by global handler: {}, {}", e.getClass().getSimpleName(), e.getMessage());
