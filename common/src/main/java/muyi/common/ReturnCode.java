@@ -11,7 +11,10 @@ import lombok.Getter;
 public enum ReturnCode implements IReturnCode {
     SUCCESS("000000", "success"),
 
+    DB_WRITE_ERROR("000001","写数据库出错"),
+
     SYSTEM_ERROR("999999", "系统内部错误"),
+
     ;
 
 

@@ -17,7 +17,7 @@ public interface OrderDao {
 
     @Insert("insert into `tb_order` (user_id, shop_id, user_name, address, mobile, status, total_amount, pay_amount) " +
             "values (#{userId}, #{shopId}, #{userName}, #{address}, #{status}, #{totalAmount}, #{payAmount}); ")
-    @Options(useGeneratedKeys = true, keyColumn = "id")
+    @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
     int insertOrder(MOrder mOrder);
 
     @Select("select * from `tb_order` where id = #{orderId};")

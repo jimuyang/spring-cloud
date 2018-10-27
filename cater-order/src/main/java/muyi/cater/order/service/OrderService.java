@@ -15,5 +15,5 @@ public interface OrderService {
      * 创建订单
      * @throws BusinessException
      */
-    void createOrder(TCreateOrder tCreateOrder) throws BusinessException;
+    Long createOrder(TCreateOrder tCreateOrder) throws BusinessException;
 }
