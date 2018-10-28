@@ -1,6 +1,7 @@
 package muyi.cater.order.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import muyi.cater.order.client.ShopClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -24,6 +25,9 @@ public class ClientController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private ShopClient shopClient;
+
     /**
      * 第一种方式 使用restTemplate, 写死ip
      */
@@ -40,7 +44,7 @@ public class ClientController {
      */
     @GetMapping("/test2")
     public String test2() {
-        ServiceInstance serviceInstance = loadBalancerClient.choose("CATER.RESTAURANT");
+        ServiceInstance serviceInstance = loadBalancerClient.choose("CATER.SHOP");
         String url = String.format("http://%s:%s", serviceInstance.getHost(), serviceInstance.getPort()) + "/goods/message";
 
         RestTemplate restTemplate = new RestTemplate();
@@ -57,8 +61,21 @@ public class ClientController {
      */
     @GetMapping("/test3")
     public String test3() {
-        return restTemplate.getForObject("http://CATER.RESTAURANT/goods/message", String.class);
+        return restTemplate.getForObject("http://CATER.SHOP/goods/message", String.class);
     }
+
+
+    /**
+     * 使用FeignClient来访问server端的服务
+     * feign: 声明式REST客户端（伪RPC）本质上就是http
+     * feign也使用了ribbon做负载均衡
+     */
+    @GetMapping("/test4")
+    public String test4() {
+        return shopClient.myGetMessage();
+    }
+
+
 
 
 }

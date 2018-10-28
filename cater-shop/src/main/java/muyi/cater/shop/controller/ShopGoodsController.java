@@ -28,8 +28,8 @@ public class ShopGoodsController {
     }
 
     @GetMapping("/message")
-    public Object getMessage() {
-        return "This is the message from ShopServer";
+    public String getMessage() {
+        return "This is the message from ShopServer2";
     }
 
 }

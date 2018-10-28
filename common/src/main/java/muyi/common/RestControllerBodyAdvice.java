@@ -39,8 +39,8 @@ public class RestControllerBodyAdvice implements ResponseBodyAdvice {
         restResponseData.setMessage(ReturnCode.SUCCESS.getMessage());
         restResponseData.setData(body);
         // 解决返回类型为String时的问题
-        if (returnType.getMethod().getReturnType().equals(String.class)) {
-            return JSON.toJson(body);
+        if (String.class.equals(returnType.getMethod().getReturnType())) {
+            return JSON.toJson(restResponseData);
         }
         return restResponseData;
     }
