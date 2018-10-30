@@ -32,4 +32,14 @@ public class ShopGoodsController {
         return "This is the message from ShopServer2";
     }
 
+    @GetMapping("/")
+    public Boolean checkStock(@RequestParam Long goodsId,
+                              @RequestParam Integer num) {
+        try {
+            return this.goodsService.checkStock(goodsId, num);
+        } catch (BusinessException be) {
+            return false;
+        }
+    }
+
 }

@@ -2,6 +2,7 @@ package muyi.cater.order.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import muyi.cater.order.client.ShopClient;
+import muyi.cater.order.client.TGoodsInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -76,6 +77,13 @@ public class ClientController {
     }
 
 
+
+    @GetMapping("/goods/info")
+    public TGoodsInfo testGetGoodsInfo() {
+        TGoodsInfo goodsInfo = this.shopClient.getGoodsInfo(1L);
+        log.info("return string: {}", goodsInfo);
+        return goodsInfo;
+    }
 
 
 }
