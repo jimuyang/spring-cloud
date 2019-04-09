@@ -1,6 +1,3 @@
-
-
-target/
 *.log
 .idea/
 *.iml
@@ -12,3 +9,5 @@ target/
 
 # bak
 # /bak
+
+target/

@@ -1,9 +1,8 @@
 package cloud.waimai.config.server;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @author: Yang Fan
@@ -11,9 +10,8 @@ import org.springframework.context.annotation.Configuration;
  * @desc:
  */
 
-@Configuration
+@SpringBootApplication
 @EnableConfigServer
-@EnableAutoConfiguration
 public class ConfigServerApp {
 
     public static void main(String[] args) {

@@ -1,3 +1,20 @@
+spring:
+  application:
+    name: config.server
+  cloud:
+    config:
+      uri: http://localhost:9999
+      server:
+        git:
+          uri: https://github.com/jimuyang/spring-cloud-waimai-config
+          basedir: target/config
+          #          uri: ${user.home}/life/github/spring-cloud-waimai-config
+
 server:
-  port: 9000
+  port: 9999
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
 
