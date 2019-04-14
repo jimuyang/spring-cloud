@@ -12,6 +12,7 @@
 
     <modules>
         <module>official-demo</module>
+        <module>waimai</module>
     </modules>
 
     <properties>
